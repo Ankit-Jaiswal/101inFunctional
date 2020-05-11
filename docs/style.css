@@ -1,0 +1,26 @@
+* {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+.banner {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  padding: 1%;
+  background-color: slategrey;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 130%;
+}
+
+.wrapper {
+  margin-top: 50px;
+  margin-left:  auto;
+  margin-right: auto;
+  width: 60%;
+}
