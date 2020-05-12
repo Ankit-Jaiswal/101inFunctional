@@ -25,3 +25,26 @@ body {
   margin-right: auto;
   width: 60%;
 }
+
+.paragraph {
+  text-align: justify;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nextbutton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  text-align: center;
+  padding: 1%;
+  font-size: 120%;
+  color: black;
+}
+
+.nextbutton:hover {
+  background-color: slategrey;
+  color: whitesmoke;
+}
