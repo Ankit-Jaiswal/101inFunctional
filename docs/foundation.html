@@ -4,20 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="terminal.jpg">
-  <title>101 in Functional Style __Foundation</title>
+  <title>101inFunctional __Foundation</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <div class="banner">
     <h1>101inFunctional</h1>
     <p>
-      Learning materials for the very first course in programming, <br> in Functional Programming Style.
+      Learning material for the very first course in programming, <br> in Functional Programming Style.
     </p> 
     <br>
   </div>
   <div class="wrapper">
-    <h2>What is Computation?</h2>
+    <table class="secnav">
+      <tr>
+        <th>
+          <div class="prevbutton">
+            <a class="link" href="./index.html"><span>prev: Introduction</span></a>
+          </div>
+        </th>
+        <th>
+          <div class="nextbutton">
+            <a class="link" href="./lambda.html"><span>next: Lambda Calculus</span></a>
+          </div>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <h2>What is a Computer Program?</h2>
+    <p class="paragraph">
+      As described by wikipedia, <em> a computer program is a <strong>collection of instructions</strong> 
+      that can be <strong>executed</strong> by a computer to perform a specific task.</em> 
+    </p>
+    <p class="paragraph">
+      To understand this, let's consider a task of adding any two natural numbers, let's call them 
+      \(a\) and \(b\). And if it is known that the computer can compute 
+      something similar but simpler tasks, like adding \(1\) to a number \(n\), 
+      subtracting \(1\) from a number \(n\), etc. 
+      Then, we can simplify our task into a bunch of simpler tasks, 
+      like \(a\) times back to back additon of \(1\), starting from \(b\). 
+      Thus, this simplified expression of our task is nothing but a computer program.
+      And the set of words/phrases/sentences with a grammar, enabling such simplification 
+      is termed as a programming language.
+    </p>
+    <p class="paragraph">
+      But if we go back to our high school mathematics then we would simply write like following,
+      \[1 + (1 + (1 + \cdots (1 + b \: )) \cdots )\]
+      which will evaluate to the sum of \(a\) and \(b\). 
+      This recursion can be emulated in computers if the (underneath) programming language supports 
+      functions (and their composition) - the very same function that is taught in high school mathematics. 
+      Functions that usually take arguments but always evaluate to a value.
+      Functions, of which we can form a chain such that return value of one is an argument of other.
+      \[x \mapsto y\]
+      Being read as "x maps to y",
+      <a class="link" href="https://en.wikipedia.org/wiki/Lambda_calculus">Lambda Calculus</a>
+      denotes it as below.
+      \[\lambda x \: . y\]
+      Therefore, if we treat "performing our task" as a function evaluation 
+      (which is not unrelated as functions are the very abstraction of day to day tasks we perform) and, 
+      if the programming language has a predefined function which when evaluated performs 
+      our simpler tasks, then we can create our "collection of instructions" by \(f\),
+      composing it \(a\) number of times, where \(f\) denotes the function which 
+      adds \(1\) to its argument, \(g\) denotes the function which subtracts \(1\)
+      from its argument and, \(F\) denotes the function which when
+      evaluated performs our given task.
+      \[F\: (a,b\: ) \equiv f(f(\cdots (f(b\: )) \cdots ))\]
+      But our computer program is not complete yet because we have not expressed the 
+      number of compositions \(f\) has to go. Formally, it can be written like this,
+      \[ F\: (a,b\: ) = \begin{cases}\: b & \text{if} \quad a=0 \\ F\: (g(a),f(b\: )) & \text{otherwise} \end{cases} \]
+      This completes our computer program if the programming language supports function declarations
+      using pattern matching or atleast built in if-then-else function.
+      Thus, we can modify our definition to suit our functional style.
+    </p>
+    <p class="paragraph"><em>
+      "A computer program is a <strong>composition of functions</strong> 
+      that can be <strong>evaluated</strong> by a computer to perform a specific task." </em>
+    </p>
+    <p class="paragraph">
+      But many languages don't support such ways (like "pattern matching", "inductive/recursive constructs", etc) 
+      to define functions. Nor many of them have if-then-else defined as a function. 
+      In such situations, programs like this would not become as a "pure" functions.
+      But in the next section, we will see how to use 
+      <a class="link" href="https://en.wikipedia.org/wiki/Church_encoding">Church encoding</a>
+      to build programs like this into pure functions.
+    </p>
+    <br><br>
+    <table class="secnav">
+      <tr>
+        <th>
+          <div class="prevbutton">
+            <a class="link" href="./index.html"><span>prev: Introduction</span></a>
+          </div>
+        </th>
+        <th>
+          <div class="nextbutton">
+            <a class="link" href="./lambda.html"><span>next: Lambda Calculus</span></a>
+          </div>
+        </th>
+      </tr>
+    </table>
+    <br><br><br>
   </div>
+  <div class="footer"></div>
 </body>
 </html>

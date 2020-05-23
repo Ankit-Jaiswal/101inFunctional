@@ -19,11 +19,23 @@ body {
   font-size: 130%;
 }
 
+.footer {
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  padding: 1%;
+  background-color: slategrey;
+  color: whitesmoke;
+  font-size: 130%;
+}
+
+
 .wrapper {
   margin-top: 50px;
   margin-left:  auto;
   margin-right: auto;
-  width: 60%;
+  width: 65%;
 }
 
 .paragraph {
@@ -34,17 +46,91 @@ body {
   text-decoration: none;
 }
 
-.nextbutton {
+.startbutton {
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
   text-align: center;
-  padding: 1%;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 120%;
-  color: black;
+  background-color: slategrey;
+  color: whitesmoke;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.startbutton span::after {
+  content: '\00bb';
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 120%;
+}
+
+.startbutton span::before {
+  content: '\00bb';
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 120%;
+}
+
+.startbutton:hover {
+  padding-right: 20px;
+}
+
+.startbutton:hover span::after {
+  opacity: 1;
+}
+
+.nextbutton {
+  margin-left: auto;
+  margin-right: 0px;
+  text-align: right;
+  width: fit-content;
+  color: slategrey;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nextbutton span {
+  color: slategrey;
 }
 
 .nextbutton:hover {
-  background-color: slategrey;
-  color: whitesmoke;
+  padding-right: 10px;
+}
+
+.nextbutton:hover span::after {
+  content: "    \00bb";
+  opacity: 1;
+}
+
+.prevbutton {
+  margin-left: 0px;
+  margin-right: auto;
+  text-align: left;
+  width: fit-content;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.prevbutton span {
+  color: slategrey;
+}
+
+.prevbutton:hover {
+  padding-left: 10px;
+}
+
+.prevbutton:hover span::before {
+  content: "\00ab    ";
+  opacity: 1;
+}
+
+.secnav {
+  width : 100%
+}
+
+.secnav th {
+  width: 50%;
 }
