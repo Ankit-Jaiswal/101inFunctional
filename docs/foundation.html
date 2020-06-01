@@ -12,7 +12,7 @@
 </head>
 <body>
   <div id="banner">
-    <h1 id="tag">101inFunctional - Foundations</h1>
+    <h1 id="tag">101inFunctional - Foundation</h1>
     <p id="tagline">
       Learning material for the very first course in programming, <br> in Functional Programming Style.
     </p> 
@@ -79,9 +79,19 @@
       \[ F\: (a,b\: ) = \begin{cases}\: b & \text{if} \quad a=0 \\ F\: (g(a),f(b\: )) & \text{otherwise} \end{cases} \]
       This completes our computer program if the programming language supports function declarations
       using pattern matching or atleast built in if-then-else function.
+      And just to enlighten this point, let's look at an implementation in <em>Lisp</em> and 
+      see for ourselves if it works. Here in <em>Lisp</em>, built-in functions \(f\) and \(g\) 
+      are called \(1+\) and \(1-\), respectively.
+    </p>
+    <br><script src="https://gist.github.com/Ankit-Jaiswal/7072772e615ad118d8991fb26cc3061c.js"></script><br>
+    <p class="paragraph">
+      If our program is a function, then it should result a value given an argument. 
+      That is to say we should be able to know the value of \(F(3,2)\), for example.
+      Please follow <a class="link" href="http://tpcg.io/S1zO0kYj">this</a> and 
+      "execute" to convice yourself. 
+      Thus, we can modify our definition to suit our functional style.
     </p>
     <p class="paragraph">
-      Thus, we can modify our definition to suit our functional style.
       <em>"A computer program is a <strong>composition of functions</strong> 
       that can be <strong>evaluated</strong> by a computer to perform a specific task." </em>
     </p>
@@ -92,11 +102,6 @@
       But in the next section, we will see how to use 
       <a class="link" href="https://en.wikipedia.org/wiki/Church_encoding">Church encoding</a>
       to build programs like this into "pure functions".
-    </p>
-    <br>
-    <h1>Let's practice</h1>
-    <p>
-
     </p>
     <br><br>
     <table class="secnav">

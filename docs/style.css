@@ -155,3 +155,7 @@ body {
 .secnav th {
   width: 50%;
 }
+
+.gist .blob-code-inner { 
+  font-size: 15px !important; 
+}
