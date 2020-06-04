@@ -19,7 +19,6 @@ body {
   font-size: 130%;
   position: fixed;
   top: 0%;
-  overflow: hidden;
   z-index: 99;
   transition: 0.5s;
 }
@@ -54,7 +53,7 @@ body {
 
 
 .wrapper {
-  margin-top: 350px;
+  margin-top: 21rem;
   margin-left:  auto;
   margin-right: auto;
   width: 65%;
