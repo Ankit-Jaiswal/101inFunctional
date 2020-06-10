@@ -30,7 +30,7 @@
         </th>
         <th>
           <div class="nextbutton">
-            <a class="link" href="./syntax.html"><span>next: Syntax</span></a>
+            <a class="link" href="./abstraction.html"><span>next: Abstraction</span></a>
           </div>
         </th>
       </tr>
@@ -38,7 +38,7 @@
     <br>
     <h2>What is a Computer Program?</h2>
     <p class="paragraph">
-      As described by wikipedia, <em> a computer program is a <strong>collection of instructions</strong> 
+      As described by Wikipedia, <em> a computer program is a <strong>collection of instructions</strong> 
       that can be <strong>executed</strong> by a computer to perform a specific task.</em> 
     </p>
     <p class="paragraph">
@@ -47,7 +47,7 @@
       something similar but simpler tasks, like adding \(1\) to a number \(n\), 
       subtracting \(1\) from a number \(n\), etc. 
       Then, we can simplify our task into a bunch of simpler tasks, 
-      like \(a\) times back to back additon of \(1\), starting from \(b\). 
+      like \(a\) times back to back addition of \(1\), starting from \(b\). 
       Thus, this simplified expression of our task is nothing but a computer program.
       And the set of words/phrases/sentences with a grammar, enabling such simplification 
       is termed as a programming language.
@@ -59,7 +59,7 @@
       This recursion can be emulated in computers if the (underneath) programming language supports 
       functions (and their compositions) - the very same function that is taught in high school mathematics. 
       Functions that usually take arguments but always evaluate to a value.
-      Functions, of which we can form a chain such that the return value of one is an argument of other.
+      Functions, of which we can form a chain such that the return value of one is an argument of others.
       \[x \mapsto y\]
       Being read as "x maps to y",
       <a href="https://en.wikipedia.org/wiki/Lambda_calculus">Lambda Calculus</a>
@@ -78,17 +78,17 @@
       number of compositions \(f\) has to go. Formally, it can be written like this,
       \[ F\: (a,b\: ) = \begin{cases}\: b & \text{if} \quad a=0 \\ F\: (g(a),f(b\: )) & \text{otherwise} \end{cases} \]
       This completes our computer program if the programming language supports function declarations
-      using pattern matching or atleast built in if-then-else function.
+      using pattern matching or at least built-in if-then-else function.
       And just to enlighten this point, let's look at an implementation in <em>Lisp</em> and 
       see for ourselves if it works. Here in <em>Lisp</em>, built-in functions \(f\) and \(g\) 
       are called \(1+\) and \(1-\), respectively.
     </p>
     <br><script src="https://gist.github.com/Ankit-Jaiswal/7072772e615ad118d8991fb26cc3061c.js"></script><br>
     <p class="paragraph">
-      If our program is a function, then it should result a value given an argument. 
-      That is to say we should be able to know the value of \(F(3,2)\), for example.
+      If our program is a function, then it should evaluate to a value given an argument. 
+      That is to say, we should be able to know the value of \(F(3,2)\), for example.
       Please follow <a href="http://tpcg.io/S1zO0kYj">this</a> and 
-      "execute" to convice yourself. 
+      "execute" to convince yourself. 
       Thus, we can modify our definition to suit our functional style.
     </p>
     <p class="paragraph">
@@ -113,7 +113,7 @@
         </th>
         <th>
           <div class="nextbutton">
-            <a class="link" href="./syntax.html"><span>next: Syntax</span></a>
+            <a class="link" href="./abstraction.html"><span>next: Abstraction</span></a>
           </div>
         </th>
       </tr>
